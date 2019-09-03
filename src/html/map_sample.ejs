@@ -1,0 +1,30 @@
+<%
+var pageData = {
+  pageTitle: "first",
+  key: "index"
+}
+%>
+
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./_partial/head', pageData) %>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.0/mapbox-gl.css' rel='stylesheet' />
+  <body>
+  <header>
+    <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+      <h1>My app12</h1>
+    </div>
+  </header>
+  <div id="map"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
